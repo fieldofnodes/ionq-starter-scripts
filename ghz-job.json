@@ -1,0 +1,29 @@
+{
+  "lang": "json",
+  "shots": 1024,
+  "name": "hello many worlds",
+  "target": "simulator",
+  "noise": {
+    "model": "harmony",
+    "seed": 100
+  },
+  "body": {
+    "qubits": 3,
+    "circuit": [
+      {
+        "gate": "h",
+        "target": 0
+      },
+      {
+        "gate": "cnot",
+        "control": 0,
+        "target": 1
+      },
+      {
+        "gate": "cnot",
+        "control": 0,
+        "target": 2
+      }
+    ]
+  }
+}
